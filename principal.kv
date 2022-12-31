@@ -1,0 +1,30 @@
+<tela>:
+    orientation: 'vertical'
+    padding: 20
+    
+    Label: 
+        text: 'TESTE APP'
+        font_size: 50
+        background_color:(0/255,169/255,136/255,1)
+    
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'CPF'
+            color: (0,0,0,1)
+        TextInput:
+            id: cpf
+
+    BoxLayout:
+        spacing: 10
+        Label: 
+            text: 'testar'
+            font_size: 20
+            color: (0,0,0,1)
+        Label:
+            id: ck
+            font_size: 20
+            color: (0,0,0,1)
+    Button:
+        text: 'Checar'
+        on_release: root.check()        
